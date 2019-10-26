@@ -1,7 +1,7 @@
 
 var apiKey = config.API_KEY;
 
-var beaURL = "https://apps.bea.gov"
+var beaURL = "https://apps.bea.gov";
 
 var queryURL = beaURL;
 
