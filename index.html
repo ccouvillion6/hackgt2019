@@ -7,24 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+  
+  
+   </head>
   <body>
 
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin=""/>
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script>
-    
     <div class="site-section bg-image" style="background-image: url('images/atlanta.jpg')">
       <div class="container">
         <div class="row justify-content-center">
@@ -1129,14 +1119,6 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
       </div>
     </div>
 
-    
-
-
-<div id="mapid"></div>
-<script src="main.js"></script>
-<link href="style.css" type="text/css" rel="stylesheet" />
-
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1165,5 +1147,20 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
     <script src="js/bootstrap-datetimepicker.js"></script>
     <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
+
+
+    <!-- Load d3.js -->
+   <script src="http://d3js.org/d3.v4.js"></script>
+   <script src="https://d3js.org/topojson.v2.min.js"></script>
+   <style src = "style.css"></style>
+   
+   <!-- Div container for map -->
+   <div id="mapcontainer" style="text-align: center">
+      <!-- Create an element where the map will take place -->
+      <svg id="mymap" width="900" height="600"></svg>
+      </div>
+   <script src = "main.js"></script>
   </body>
+
+  
 </html>
