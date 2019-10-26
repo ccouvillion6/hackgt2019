@@ -1,9 +1,22 @@
-var giphyURL = "https://api.giphy.com/v1/gifs/search?q=";
 
-//var apiKey = config.API_KEY;
-//var queryURL = giphyURL + dessert + apiKey;
+var apiKey = config.API_KEY;
 
-//$.ajax({
-//  url: queryURL,
-//  method: "GET"
-//})
+var beaURL = "https://apps.bea.gov";
+
+var queryURL = beaURL;
+
+
+
+
+$.ajax({
+  url: queryURL,
+  method: "GET"
+})
+
+
+.then(function(response){
+
+  
+
+});
+
