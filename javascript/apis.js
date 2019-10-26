@@ -20,31 +20,42 @@ $("#submit").click(function(event) {
 });
 
 
-$.ajax({
-  url: queryURL,
-  method: "GET"
-})
 
-
-.then(function(response){
-
-    console.log(response);
-
-    console.log(response[1]);
-
-    for(var i = 0; i < response.length; i++){
-        console.log(response[i][0]);
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+      
+      
+      .then(function(response){
+      
+          console.log(response);
+      
+      
+          for(var i = 0; i < response.length; i++);
+          console.log(response[11][0]);
+          console.log("Median household income = " + response[11][1]);
+            //   console.log(response[i][0]);
     
-        if (response[i][0] == stateVal){
-            console.log(response[i][1]);
-        }
-
-    }
-
-   
 
 
-  
+            //   if (response[i][0] === stateVal){
+            //       console.log(response[i][1]);
+            //   }
+      
+          
 
-});
+        
+
+
+      
+         
+      
+      
+        
+      
+      });
+ 
+
+
 
